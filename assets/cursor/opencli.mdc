@@ -1,0 +1,13 @@
+---
+description: Use OpenCLI for command discovery, adapter selection, and adapter authoring workflows.
+globs:
+alwaysApply: false
+---
+
+- Use `opencli` as the first discovery layer for website adapters, desktop adapters, and passthrough CLIs.
+- Check installation with `command -v opencli`.
+- Discover available commands with `opencli list -f yaml` before assuming a site or tool command exists.
+- Prefer `-f json` or `-f yaml` when the result will be parsed by the agent.
+- Use the lightest working route in this order: public adapter, browser adapter, desktop adapter, passthrough CLI.
+- Run `opencli doctor` when browser-backed commands return empty or unauthorized results.
+- If no adapter exists, use `opencli generate` for a quick path or `opencli explore`, `opencli cascade`, `opencli synthesize`, and `opencli verify` for a full authoring flow.

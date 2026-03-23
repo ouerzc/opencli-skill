@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenCLI"
+  short_description: "Discover and use OpenCLI across AI agent environments."
+  default_prompt: "Use $opencli to discover available OpenCLI commands and choose the right adapter or passthrough flow for this agent task."

@@ -1,0 +1,6 @@
+{
+  "instructions": [
+    "./AGENTS.md",
+    "./agent/opencli.md"
+  ]
+}
